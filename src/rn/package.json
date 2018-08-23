@@ -1,0 +1,30 @@
+{
+  "name": "rn",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build": "react-native run-ios --simulator \"iPhone 8\" --no-packager",
+    "dev": "concurrently \"npm:build\" \"npm:start\""
+  },
+  "dependencies": {
+    "react": "16.4.1",
+    "react-native": "0.56.0",
+    "react-native-camera": "^1.2.0",
+    "react-native-linear-gradient": "^2.4.0",
+    "react-native-push-notification": "^3.1.1",
+    "react-native-qrcode-scanner": "^1.0.1",
+    "react-navigation": "^2.11.2"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "5.0.2",
+    "concurrently": "^3.6.1",
+    "react-test-renderer": "16.4.1"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  }
+}
