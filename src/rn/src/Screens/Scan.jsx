@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Animated, StyleSheet, Text, View} from 'react-native'
+import {Animated, StyleSheet, Text, View, Easing} from 'react-native'
 import QRCodeScanner from 'react-native-qrcode-scanner'
 
 import {Styles} from '../Helper'
@@ -10,21 +10,21 @@ export default class extends Component {
         header: null,
     }
 
+
     constructor(props) {
         super(props)
 
-        this.state = {
-            rotation: new Animated.Value(0),
-        }
+        this.state = {rotation: new Animated.Value(0)}
     }
 
     componentDidMount() {
-        Animation.loop(
+        Animated.loop(
             Animated.timing(
                 this.state.rotation,
                 {
                     toValue: 1,
-                    duration: 10000,
+                    duration: 1000,
+                    easing: Easing.linear,
                 },
             ),
         ).start()
@@ -36,12 +36,21 @@ export default class extends Component {
     }
 
     render() {
+
+        // const spin = `${this.rotation._value}deg`
+        const spin = this.state.rotation.interpolate({
+            inputRange: [0, 1],
+            outputRange: ['0deg', '360deg'],
+        })
+
         return <BG>
             <View style={Styles.center}>
                 <QRCodeScanner containerStyle={styles.scanner} onRead={(e) => this.gotCode(e)}/>
-                <View style={styles.space}>
-                    <Text>Scanning...</Text>
-                    <Image
+                <View style={{...styles.space, ...Styles.center}}>
+                    <Text style={styles.bold}>Scanning...</Text>
+                    <Animated.Image
+                        resizeMode="contain"
+                        style={{...styles.image, transform: [{rotate: spin}]}}
                         source={require('../../assets/images/sync.png')}
                     />
                 </View>
@@ -62,8 +71,12 @@ const styles = StyleSheet.create({
     space: {
         marginTop: 100,
     },
-    listNumber: {
+    bold: {
         fontWeight: 'bold',
     },
-    listText: {},
+    image: {
+        width: 32,
+        height: 32,
+        margin: 16,
+    },
 })
