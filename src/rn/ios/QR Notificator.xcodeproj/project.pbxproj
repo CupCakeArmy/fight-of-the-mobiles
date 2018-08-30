@@ -375,7 +375,7 @@
 		00E356F21AD99517003FC87E /* rnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rnTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* QR Notificator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR Notificator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* QR Notificator.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR Notificator.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = rn/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = rn/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -662,7 +662,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* QR Notificator.app */,
+				13B07F961A680F5B00A75B9A /* QR Notificator.temp_caseinsensitive_rename.app */,
 				00E356EE1AD99517003FC87E /* QR NotificatorTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* QR Notificator-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* QR Notificator-tvOSTests.xctest */,
@@ -759,7 +759,7 @@
 			);
 			name = "QR Notificator";
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* QR Notificator.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* QR Notificator.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* QR Notificator-tvOS */ = {
@@ -805,14 +805,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 610;
-				ORGANIZATIONNAME = Nicco;
+				ORGANIZATIONNAME = nicco.io;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
-					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 6R9WWC2RCL;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1372,7 +1369,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR Notificator.app/QR Notificator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR Notificator.temp_caseinsensitive_rename.app/QR Notificator.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -1400,7 +1397,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR Notificator.app/QR Notificator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR Notificator.temp_caseinsensitive_rename.app/QR Notificator.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -1408,6 +1405,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 6R9WWC2RCL;
@@ -1429,7 +1428,8 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.nicco.app.ios.fotm.rn;
-				PRODUCT_NAME = "QR Notificator";
+				PRODUCT_NAME = "QR Notificator.temp_caseinsensitive_rename";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1438,6 +1438,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6R9WWC2RCL;
 				HEADER_SEARCH_PATHS = (
@@ -1458,7 +1460,8 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.nicco.app.ios.fotm.rn;
-				PRODUCT_NAME = "QR Notificator";
+				PRODUCT_NAME = "QR Notificator.temp_caseinsensitive_rename";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1566,7 +1569,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.rn-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR Notificator-tvOS.app/QR Notificator-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR Notificator.temp_caseinsensitive_rename-tvOS.app/QR Notificator.temp_caseinsensitive_rename-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -1602,7 +1605,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.rn-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR Notificator-tvOS.app/QR Notificator-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR Notificator.temp_caseinsensitive_rename-tvOS.app/QR Notificator.temp_caseinsensitive_rename-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;

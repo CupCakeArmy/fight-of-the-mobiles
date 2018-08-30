@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "QR Notificator.app"
+               BuildableName = "QR Notificator.temp_caseinsensitive_rename.app"
                BlueprintName = "QR Notificator"
                ReferencedContainer = "container:QR Notificator.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "QR Notificator.app"
+            BuildableName = "QR Notificator.temp_caseinsensitive_rename.app"
             BlueprintName = "QR Notificator"
             ReferencedContainer = "container:QR Notificator.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "QR Notificator.app"
+            BuildableName = "QR Notificator.temp_caseinsensitive_rename.app"
             BlueprintName = "QR Notificator"
             ReferencedContainer = "container:QR Notificator.xcodeproj">
          </BuildableReference>
@@ -103,7 +103,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "QR Notificator.app"
+            BuildableName = "QR Notificator.temp_caseinsensitive_rename.app"
             BlueprintName = "QR Notificator"
             ReferencedContainer = "container:QR Notificator.xcodeproj">
          </BuildableReference>
