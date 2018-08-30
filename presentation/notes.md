@@ -84,9 +84,3 @@ Created in 2013. 1.3M Apps created in 2015.
 ## Tech Behind
 
 Angular backbone + Cordova
-
-# Facts
-
-## RN
-
-Size: `~19mb`
