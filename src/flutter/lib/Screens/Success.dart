@@ -10,8 +10,9 @@ class Success extends StatelessWidget {
   Success({@required this.result}) {
     final initializationSettings = InitializationSettings(
         AndroidInitializationSettings('app_icon'), IOSInitializationSettings());
-    final flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin()
-      ..initialize(initializationSettings);
+
+    final flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+    flutterLocalNotificationsPlugin.initialize(initializationSettings);
 
     flutterLocalNotificationsPlugin.show(
       this.result,

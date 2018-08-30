@@ -16,8 +16,8 @@ class Home extends StatelessWidget {
         Padding(padding: EdgeInsets.only(bottom: 80.0), child: Logo()),
         Button(
           callback: () {
-            // Navigator.pushNamed(context, '/scan');
-            Navigator.pushNamed(context, '/success/1');
+            Navigator.pushNamed(context, '/scan');
+            // Navigator.pushNamed(context, '/success/1');
           },
           text: "Scan",
         ),
