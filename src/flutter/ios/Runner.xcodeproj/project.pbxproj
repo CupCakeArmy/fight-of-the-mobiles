@@ -177,7 +177,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = "The Chromium Authors";
+				ORGANIZATIONNAME = nicco.io;
 				TargetAttributes = {
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
