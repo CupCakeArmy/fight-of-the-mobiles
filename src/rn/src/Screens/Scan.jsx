@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
-import {Animated, StyleSheet, Text, View, Easing} from 'react-native'
+import React, { Component } from 'react'
+import { Animated, StyleSheet, Text, View, Easing } from 'react-native'
 import QRCodeScanner from 'react-native-qrcode-scanner'
 
-import {Styles} from '../Helper'
+import { Styles } from '../Helper'
 import BG from '../BG'
 
 export default class extends Component {
@@ -14,7 +14,7 @@ export default class extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {rotation: new Animated.Value(0)}
+        this.state = { rotation: new Animated.Value(0) }
     }
 
     componentDidMount() {
@@ -32,7 +32,7 @@ export default class extends Component {
 
     gotCode(e) {
         const code = e.data
-        this.props.navigation.navigate('Success', {code})
+        this.props.navigation.navigate('Success', { code })
     }
 
     render() {
@@ -45,12 +45,12 @@ export default class extends Component {
 
         return <BG>
             <View style={Styles.center}>
-                <QRCodeScanner containerStyle={styles.scanner} onRead={(e) => this.gotCode(e)}/>
-                <View style={{...styles.space, ...Styles.center}}>
+                <QRCodeScanner containerStyle={styles.scanner} onRead={(e) => this.gotCode(e)} />
+                <View style={{ ...styles.space, ...Styles.center }}>
                     <Text style={styles.bold}>Scanning...</Text>
                     <Animated.Image
                         resizeMode="contain"
-                        style={{...styles.image, transform: [{rotate: spin}]}}
+                        style={{ ...styles.image, transform: [{ rotate: spin }] }}
                         source={require('../../assets/images/sync.png')}
                     />
                 </View>
@@ -65,8 +65,6 @@ const styles = StyleSheet.create({
         padding: 20,
         borderColor: '#0ff',
         borderWidth: 1,
-        // width: 100,
-        // height: 100
     },
     space: {
         marginTop: 100,
