@@ -22,7 +22,6 @@ export default class extends Component {
 
         if (code === undefined) navigation.navigate('scan')
         else PushNotification.localNotificationSchedule({
-            id: 0,
             title: '🚀 Scan succeded!',
             message: `Your super sercret code is: ${code}`,
             date: new Date(Date.now() + (5 * 1000))
