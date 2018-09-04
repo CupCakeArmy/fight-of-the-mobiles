@@ -263,13 +263,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.7"
-  qr_reader:
-    dependency: "direct main"
-    description:
-      name: qr_reader
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.3"
   quiver:
     dependency: transitive
     description:
