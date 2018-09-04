@@ -9,14 +9,14 @@ module.exports = {
     ],
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'public')
+        path: path.resolve(__dirname, 'www')
     },
     resolve: {
         extensions: ['.js', '.jsx']
     },
     context: path.resolve(__dirname, 'src'),
     devServer: {
-        contentBase: path.resolve(__dirname, 'public/assets'),
+        contentBase: path.resolve(__dirname, 'www/assets'),
         open: true,
     },
     plugins: [

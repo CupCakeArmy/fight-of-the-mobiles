@@ -2,10 +2,12 @@ import React from 'react'
 
 import Home from './Home'
 import Scan from './Scan'
+import Success from './Success'
 
 const Screens = {
 	home: Home,
-	scan: Scan
+	scan: Scan,
+	success: Success,
 }
 
 export default class App extends React.Component {

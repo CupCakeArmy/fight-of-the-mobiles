@@ -6,7 +6,9 @@ import './assets/fonts/fonts.less'
 
 import App from './screens/App'
 
-ReactDOM.render(
-	<App />
-	, document.getElementById('root')
-)
+document.addEventListener('deviceready', () => {
+	ReactDOM.render(
+		<App />
+		, document.getElementById('root')
+	)
+}, false)
