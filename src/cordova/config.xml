@@ -32,4 +32,5 @@
     <plugin name="phonegap-plugin-local-notification" spec="^1.0.1" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
     <engine name="ios" spec="^4.5.5" />
+    <engine name="android" spec="^7.0.0" />
 </widget>

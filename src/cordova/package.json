@@ -14,6 +14,7 @@
     "ios": "npm run build:dev && cordova run ios --target=\"iPhone-8\""
   },
   "dependencies": {
+    "cordova-android": "^7.0.0",
     "cordova-ios": "^4.5.5",
     "cordova-plugin-camera": "^4.0.3",
     "cordova-plugin-dialogs": "^2.0.1",
@@ -48,7 +49,8 @@
       "cordova-plugin-dialogs": {}
     },
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
