@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+img {
+  object-fit: contain;
+}
+.spinning {
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+.fill {
+  width: 100%;
+  height: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.button {
+  border: 1px solid #000;
+  height: 45px;
+  width: 180px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bold {
+  font-weight: bold;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica Neue';
+}
+#app .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-image: linear-gradient(135deg, #6FABFF, #E4FF71);
+}
+#app .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.Logo {
+  position: relative;
+  font-family: 'Jaapokki';
+}
+.Logo .title {
+  font-size: 30px;
+}
+.Logo .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -20px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #f00;
+  border-radius: 20px;
+}
+.Logo .badge div {
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: 'Jaapokki';
+  src: url(assets/Jaapokki.otf);
+}
+@font-face {
+  font-family: 'Helvetiva Neue';
+  font-weight: lighter;
+  font-style: normal;
+  src: url("assets/Helvetica Neue LT Std Light.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Helvetiva Neue';
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/Helvetica Neue LT Std Medium.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Helvetiva Neue';
+  font-weight: bold;
+  font-style: normal;
+  src: url("assets/Helvetica Neue LT Std Bold.otf") format('opentype');
+}
+
