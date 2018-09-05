@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cordova/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/build" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/flutter_local_notifications/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/flutter_local_notifications/build" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/flutter_local_notifications/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/flutter_local_notifications/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/native_device_orientation/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/native_device_orientation/build" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/native_device_orientation/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/native_device_orientation/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/qr_mobile_vision/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/qr_mobile_vision/build" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/qr_mobile_vision/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/qr_mobile_vision/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/qr_reader/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/qr_reader/build" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/qr_reader/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/src/flutter/ios/.symlinks/plugins/qr_reader/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
