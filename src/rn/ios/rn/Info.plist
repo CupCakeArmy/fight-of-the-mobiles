@@ -38,7 +38,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Camera for QR Scanner</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Jaapokki.otf</string>
